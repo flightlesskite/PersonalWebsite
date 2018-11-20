@@ -1,0 +1,109 @@
+{% extends 'calvin/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    CV
+{% endblock %}
+
+{% block body_block %}
+    <p>
+        This pages acts an informal Resume or CV of sorts as I tell you a bit
+        about my academics and professional experiences.
+        <br/>
+        <a href="{% static "resume.pdf" %}">Here is a PDF version my CV</a>.
+    </p>
+
+    <p>
+        <h3>Academics</h3>
+        I went to the <a href="https://www.strath.ac.uk">University of Strathclyde</a> for
+        my UG degree in International Business + Marketing from 2013-2017.
+        <br/>
+        As part of my programme, I went on an exchange to
+        <a href="https://telfer.uottawa.ca/en/">Telfer, School of Management</a>
+        in Ottawa, Canada for half a year.
+        <br/>
+        Upon graduating, I started my Masters Degree in Software Development at the
+        <a href="https://www.gla.ac.uk">University of Glasgow </a> later that year.
+        <br/>
+        <br/>
+        Modules completed during my Software Development course:
+        <ul>
+            <li>Programming (Java)</li>
+            <li>Advanced Programming (Java)</li>
+            <li>Database Theory and Application (SQL + Java)</li>
+            <li>Algorithms and Data Structures</li>
+            <li>Systems and Networks</li>
+            <li>Software Engineering (UML + JUnit)</li>
+            <li>Internet Technology (Python + Django)</li>
+            <li>Software Project Management</li>
+            <li>Human Computer Interface</li>
+            <li>Enterprise Cyber Security</li>
+        </ul>
+        <br/>
+        I would consider going for a PhD much later on in my life if presented with the opportunity.
+        <br/>
+        For now, I wish to pursue a career in Software Development & continue honing my technical skills.
+        <br/>
+    </p>
+
+    <p>
+        <h3>Work Experience</h3>
+
+        Part time roles:
+        <ul>
+            <li><a href="https://www.johnlewis.com">John Lewis</a> Sales Assistant</li>
+            I worked in the Nursery Department where I sold items such as pushchairs/carseats.
+            <li><a href="http://www.craighelen.net">Craighelen</a> Tennis Coach</li>
+            I worked as a part time coach for after-school tennis lessons and summer camps.
+            <li>Language Tutor (Chinese)</li>
+            I prepared and delivered 1-on-1 Chinese lessons to a non-native speaking student.
+        </ul>
+        Summer Internships/Placements:
+        <ul>
+            <li><a href="http://dcamps.ca/Summer-Camps/Camp-Huronda.aspx">Camp Huronda</a> Arts & Crafts Skills Leader</li>
+            I prepared and lead arts and crafts lessons to children aged 5-16 at a Diabetic Summer Camp.
+            <li><a href="http://walkin.hk">WalkInHongKong</a> Web Manager Intern</li>
+            I managed website content, social media, PR and did graphic designs for upcoming events.
+            <li><a href="http://www.aia.com/en/index.html">AIA</a> Marketing Intern</li>
+            I processed insurance transactions and promoted new Vitality health app.
+            <li><a href="http://www.jackmorton.com">Jack Morton</a> Showcrew Volunteer</li>
+            I was a volunteer for the Glasgow Commonwealth Games 2014 opening ceremony.
+        </ul>
+
+
+    </p>
+
+    <p>
+        <h3>Skills</h3>
+
+        <p>
+            <strong>
+                To see all the projects I have done using these technologies, click <a href="{% url 'projects' %}">here</a>.
+            </strong>
+        </p>
+
+        Languages that I have experience with:
+        <ul>
+            <li>Java, Javascript, HTML/CSS, Python, Django, ROS, C#, SQL</li>
+        </ul>
+
+        Applications/IDES I have used:
+        <ul>
+            <li>Eclipse, PyCharm, Unity, Gedit, Visual Studio, Xcode, Latex</li>
+        </ul>
+
+        Operating Systems I have:
+        <ul>
+            <li>Windows 7 & 10, MacOS, Linux (Ubuntu 16.04)</li>
+        </ul>
+
+        Interpersonal skills that I possess:
+        <ul>
+            <li>Mentorship, Leadership, Collaboration, Bilingual in English and Chinese</li>
+        </ul>
+
+    </p>
+        <img src="{% static "images/baxter.jpg" %}" width="450" height="226" alt="Picture of Baxter"/>
+    <br/>
+    This is just myself demonstrating VR teleoperation of a robot for my final project!
+{% endblock %}

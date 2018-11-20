@@ -1,0 +1,98 @@
+{% extends 'calvin/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    About
+{% endblock %}
+
+{% block body_block %}
+<div style="padding:6px;">
+    <h1 class="page-header">About Me</h1>
+
+    <p>
+        My name is Calvin Hew, I am from Scotland and 23 years old this year.
+        <br/>
+    </p>
+
+    <br/>
+
+    <img src="{% static "images/dougal.jpg" %}" width="250" height="326" alt="Picture of Baxter"/>
+    <img src="{% static "images/vanessaandi.jpg" %}" width="250" height="326" alt="Picture of Baxter"/>
+    <br/>
+    On the left is my dog & I + on the right is my girlfriend & I...
+
+
+    <p>
+        <h3>Interests</h3>
+      <p id="textbox">
+          In terms of the field of research I am most interested in, I would say
+          the advancements in VR and AR technologies are ones I find to be most fascinating.
+          In particular, the applications used within entertainment (such as Video Games) are simply
+          mind-blowing! To be able to create a level of immersion that previously only existed
+          in fiction is such an incredible feat.  In addition to this, I have developed an interest in
+          robotics upon completing my Masters Final Project.  With advancements in AI and
+          the ability to replicate human-like qualities, I find myself excited to see what the future holds for the robotics field.
+      </p>
+      <p id="textbox">
+          Outside of technology, I like to go for runs (on a sunny day), watch anime or
+          learn some songs.  My anime taste isn't the greatest but I like some emotional
+          stories like Clannad and Little Busters! I am currently really into soul and
+          gospel music but my first love was RnB back in the 2000s. I can play piano, guitar and sing.
+          I used to also play the flute in secondary school but probably cannot remember
+          how to do it anymore... I would say I am quite big into fashion and like to keep up with styles from all over the world.
+          If I have a bit more free time, I do enjoy playing video games and playing tennis
+          (again if the sun is out).
+      </p>
+    </p>
+
+    <p>
+    <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="{% static "images/camphuronda.jpg" %}" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+    </div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="{% static "images/camphuronda2.jpg" %}" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+    </p>
+
+<p>
+    <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="{% static "images/camphuronda3.jpg" %}" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="{% static "images/camphuronda4.jpg" %}" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+</p>
+
+
+<div class="clearfix"></div>
+
+
+
+
+</div>
+
+
+{% endblock %}

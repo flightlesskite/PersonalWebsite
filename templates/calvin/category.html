@@ -1,0 +1,41 @@
+{% extends 'calvin/base.html' %}
+{% load staticfiles %}
+{% load calvin_template_tags %}
+
+
+{% block body_block %}
+    <ul id="projecttab">
+        {% get_category_list category %}
+    </ul>
+
+    <br/>
+    {% if category %}
+        <h1>{{ category.name }}</h1>
+
+        {% if pages %}
+            <ul>
+                {% for page in pages %}
+                    <p>
+                        <strong>{{ page.title }}</strong>
+                        <br/>
+                        <a href="{{ page.url }}">Github code</a>
+                        <br/>
+                        {% if page.video %}
+                            Video demonstration can be found at: <a href="{{ page.video }}">{{ page.video }}</a>
+                        {% endif %}
+                    <br />
+                    </p>
+                    <p id="textbox">
+                    {{ page.description }}
+
+                    </p>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <strong>No pages currently in Category</strong>
+        {% endif %}
+
+    {%  else %}
+        The specified category does not exist!
+    {% endif %}
+{% endblock %}

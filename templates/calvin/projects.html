@@ -1,0 +1,26 @@
+{%  extends 'calvin/base.html' %}
+{%  load staticfiles %}
+{%  load calvin_template_tags %}
+
+{% block title_block %}
+    Projects
+{% endblock %}
+
+{% block body_block %}
+
+    <div>
+        {% if categories %}
+        <ul id="projecttab">
+            {% for category in categories %}
+                <li class="nav">
+                <a class="projtab" href="/calvin/category/{{ category.slug }}">{{ category.name }}</a>
+                <img class="icon" src="/{{ category.image }}">
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <strong>There are no categories present.</strong>
+    {%  endif %}
+    </div>
+
+{% endblock %}
