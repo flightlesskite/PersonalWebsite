@@ -8,13 +8,16 @@
 
 {% block body_block %}
 
-    <div>
+    <div class="projectbar">
         {% if categories %}
-        <ul id="projecttab">
+        <ul>
             {% for category in categories %}
                 <li class="nav">
-                <a class="projtab" href="/calvin/category/{{ category.slug }}">{{ category.name }}</a>
-                <img class="icon" src="/{{ category.image }}">
+                <a class="navtab" href="/calvin/category/{{ category.slug }}">
+                    <div>{{ category.name }}
+                        <p><img class="icon" src="/{{ category.image }}"></p>
+                    </div>
+                </a>
                 </li>
             {% endfor %}
         </ul>

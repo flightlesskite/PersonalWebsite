@@ -17,13 +17,13 @@ def populate():
     python_projects = [
         {"title": "Teleoperation of Baxter robot using the HTC Vive",
          "url": "https://github.com/flightlesskite/vive_teleoperation",
-         "description": "Research Project for my Masters degree involving "
-                        "the implementation of a VR interface for the teleoperation"
-                        "of a Baxter robot. Movements of a user was tracked as a set of cartesian "
+         "description": "A Masters Research Project involving the implementation of a VR "
+                        "interface for the teleoperation of a Baxter robot on a single Linux "
+                        "System. Movements of a user was tracked as a set of cartesian "
                         "co-ordinates using the HTC Vive HMD and controllers through the use "
                         "of the OpenVR API. These co-ordinates would then be subsequently translated "
                         "into ROS co-ordinate system and used to map to Baxter's limbs. "
-                        "Finally, the implementation of a stereocamera was achieved"
+                        "Finally, the implementation of a stereocamera was achieved "
                         "through using Unity (C#) to render video streaming on "
                         "the individual eyes of the user.",
 

@@ -4,31 +4,33 @@
 
 
 {% block body_block %}
-    <ul id="projecttab">
+
+    <div class="projectbar">
+        <ul>
         {% get_category_list category %}
     </ul>
 
-    <br/>
+    <div class="projectbox">
     {% if category %}
         <h1>{{ category.name }}</h1>
-
+        <br/>
         {% if pages %}
             <ul>
                 {% for page in pages %}
                     <p>
-                        <strong>{{ page.title }}</strong>
-                        <br/>
-                        <a href="{{ page.url }}">Github code</a>
-                        <br/>
+                        <h5>{{ page.title }}</h5>
+                        <a class="link" href="{{ page.url }}">Github code</a>
                         {% if page.video %}
-                            Video demonstration can be found at: <a href="{{ page.video }}">{{ page.video }}</a>
+                            <a class="link" href="{{ page.video }}">
+                            YouTube video</a>
                         {% endif %}
                     <br />
                     </p>
-                    <p id="textbox">
-                    {{ page.description }}
 
+                    <p>
+                    {{ page.description }}
                     </p>
+
                 {% endfor %}
             </ul>
         {% else %}
@@ -38,4 +40,9 @@
     {%  else %}
         The specified category does not exist!
     {% endif %}
+    </div>
+
+    </div>
+
+
 {% endblock %}

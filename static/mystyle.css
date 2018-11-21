@@ -1,8 +1,14 @@
 body{
     margin: 0;
     padding: 0;
-    background-size: cover;
+    background: url('/static/images/bg.jpg');
+    background-color: black;
+    background-position: center;
     font-family: 'Century Gothic', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 100;
+
 }
 
 .box{
@@ -13,7 +19,6 @@ body{
     margin: auto;
     margin-top: 0%;
     color: white;
-
 }
 
 .box-img{
@@ -60,11 +65,32 @@ body{
     padding: 0;
 }
 
+.projectbar {
+    width: 800px;
+    padding: 40px;
+    margin: auto;
+    margin-top: 0%;
+    color: white;
+    text-align: center;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
+.projectbox{
+    text-align: left;
+}
 
-#textbox {
-    color:blue;
-    margin-right:50px;
+.projectbox h1{
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+
+.projectbox h5{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
 }
 
 img.icon {
@@ -75,30 +101,29 @@ img.icon {
     height: 100px;
 }
 
-#projecttab{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
+.cvbox{
+    width: 900px;
+    background: rgba(0, 0, 0 ,0.4);
+    padding: 40px;
+    text-align: left;
+    margin: auto;
+    margin-top: 0%;
+    color: white;
 }
 
-li a.projtab{
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 26px;
-    text-decoration: none;
+#highlight{
+    font-weight: 300;
 }
 
-#navbar {
+.navbar {
     text-align: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.4);
 }
+
 
 li.nav {
     display: inline-block;
@@ -108,6 +133,17 @@ li a.navtab {
     letter-spacing: 3px;
     font-weight: 100;
     display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a.highlighted {
+    letter-spacing: 3px;
+    font-weight: 100;
+    display: block;
+    background-color: white;
     color: black;
     text-align: center;
     padding: 14px 16px;
@@ -115,12 +151,19 @@ li a.navtab {
 }
 
 li a.navtab:hover {
-    background-color: lightgrey;
+    color: #b9b9b9;
 }
 
-li a.projtab:hover {
-    background-color: lightgray;
+a.link{
+    letter-spacing: 3px;
+    font-weight: 100;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 25px;
+    text-decoration: none;
 }
+
 
 div.gallery {
     border: 1px solid #ccc;

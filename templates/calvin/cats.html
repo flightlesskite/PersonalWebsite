@@ -1,12 +1,10 @@
 {% for c in cats %}
     <li class="nav">
     {% if c == act_cat %}
-        <strong>
-            <a class="projtab" href="{%  url 'show_category' c.slug %}">{{ c.name }}</a>
-        </strong>
+        <a class="highlighted" href="{%  url 'show_category' c.slug %}">{{ c.name }}</a>
         <br/>
     {% else %}
-        <a class="projtab" href="{%  url 'show_category' c.slug %}">{{ c.name }}</a>
+        <a class="navtab" href="{%  url 'show_category' c.slug %}">{{ c.name }}</a>
         <br/>
     {% endif %}
     </li>
