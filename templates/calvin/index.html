@@ -7,50 +7,23 @@
 
 {% block body_block %}
 
-    <div>
-    <div>
-        <h3>Project Quick Links</h3>
+    <div class="box">
+        <img src="{% static "images/profile.jpg" %}" class="box-img">
+        <h1>Calvin Hew</h1>
+        <h5>Graduate Software Developer</h5>
+        <p>
+            Hello! Welcome to my personal website. I recently just graduated
+            from my MSc Software Development course.  <a href="{% url 'cv' %}">Here</a>, you will
+            find some information regarding my past work experience and education.  A lot of my code,
+            including this website is found on my <a href="https://github.com/flightlesskite/">GitHub</a>.
+
+        </p>
+    <ul class="quicklink">
+        <li><a href="/calvin/category/python-projects"><i class="fab fa-python"></i></a></li>
+        <li><a href="/calvin/category/java-projects"><i class="fab fa-java"></i></a> </li>
+        <li><a href="/calvin/category/other-projects"><i class="fas fa-pencil-alt"></i></a></li>
+
+    </ul>
     </div>
 
-    {% if categories %}
-        <ul>
-            {% for category in categories %}
-                <li>
-                    <a href="/calvin/category/{{ category.slug }}">{{ category.name }}</a>
-                </li>
-            {% endfor %}
-        </ul>
-    {% else %}
-        <strong>There are no categories present.</strong>
-    {%  endif %}
-    </div>
-
-    <div>
-    <div>
-        <p>
-           Hello. I am a MSc Software Development graduate with big ideas and great ambitions.
-        </p>
-
-        <p>
-            <a href="{% url 'about' %}">Here</a>, you will find some information regarding my past work experience and education.
-        </p>
-
-        <p>
-            A lot of my code, including this website is found on my <a href="https://github.com/flightlesskite/">GitHub</a>.
-        </p>
-
-        <p>
-            My interests include but are not limited to Anime, Video Games, Fashion, Tennis and Music
-        </p>
-
-        <p>
-            You can find me on my social channels: <a href="https://www.linkedin.com/in/ryomaechizen/">LinkedIn</a>,
-            <a href="https://www.facebook.com/calvynhew">Facebook</a> &
-            <a href="https://www.instagram.com/ryomaechizen/">Instagram</a>
-        </p>
-    </div>
-
-
-
-<img src="{% static "images/miyamura.jpg" %}" alt= "Picture of Miyamura"/>
 {% endblock %}
