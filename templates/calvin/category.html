@@ -19,10 +19,12 @@
                 {% for page in pages %}
                     <p>
                         <h5>{{ page.title }}</h5>
-                        <a class="link" href="{{ page.url }}">Github code</a>
+
+                        {% if page.url %}
+                            <a class="link" href="{{ page.url }}">Github code</a>
+                        {% endif %}
                         {% if page.video %}
-                            <a class="link" href="{{ page.video }}">
-                            YouTube video</a>
+                            <a class="link" href="{{ page.video }}">YouTube video</a>
                         {% endif %}
                     <br />
                     </p>
@@ -30,6 +32,7 @@
                     <p>
                     {{ page.description }}
                     </p>
+                    <hr>
 
                 {% endfor %}
             </ul>

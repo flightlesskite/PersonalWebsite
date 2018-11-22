@@ -15,7 +15,7 @@ def populate():
     # each data structure, and add the data to the models.
 
     python_projects = [
-        {"title": "Teleoperation of Baxter robot using the HTC Vive",
+        {"title": "Teleoperation of Baxter Robot using the HTC Vive",
          "url": "https://github.com/flightlesskite/vive_teleoperation",
          "description": "A Masters Research Project involving the implementation of a VR "
                         "interface for the teleoperation of a Baxter robot on a single Linux "
@@ -30,42 +30,92 @@ def populate():
          "video": "https://youtu.be/3GzbZMFeiFI"},
         {"title": "FishyDishy Web Application",
          "url": "https://github.com/flightlesskite/fishy_dishy_project",
-         "description": "Group project.",
+         "description": "A Group Project utilizing the Python and the Django framework to build "
+                        "a web application for sharing fish recipes amongst a community of "
+                        "different users.  Users are able to create a profile, save receipes "
+                        "search for receipes, write reviews and identify nearby fishmongers. "
+                        "Responsible for both front & back-end development – "
+                        "implementing the Fish Map feature using Google Maps API, "
+                        "connecting with database through Python Models, "
+                        "creating Python Views to serve data rendered by templates "
+                        "and testing the several functions of the web application.",
          "video": "https://youtu.be/UeZ-_Mk48a8" },
     ]
 
     java_projects = [
         {"title": "Top Trumps: Command Line and Online version",
          "url": "https://github.com/flightlesskite/TopTrumps",
-         "description": "",
+         "description": "A Group Project utilizing Java to build a command line version "
+                        "and online web application of the Top Trumps game.  "
+                        "Responsible for creating the GameManager class used to control "
+                        "flow/logic of game, designing the user interface for the "
+                        "online version (using Javascript, CSS and HTML) and"
+                        "implementing the RESTAPI methods used to "
+                        "connect front-end with back-end.",
          "video": ""},
         {"title": "Car Intersection Simulator using Threads",
          "url": "https://github.com/flightlesskite/APAE",
-         "description": "",
+         "description": "An assessed Java exercise from my Advanced Programming "
+                        "module which uses Threads and Locks to create a traffic "
+                        "intersection simulation.  The cars cannot occupy the same "
+                        "space at any given moment and can move in a straight line - "
+                        "either left to right or up and down (& vice versa).",
          "video": ""},
         {"title": "Bag Data Structure Implementation",
          "url": "https://github.com/flightlesskite/ADS",
-         "description": "",
+         "description": "An assessed Java exercise from my Algorithms and Data "
+                        "Structures module which utilises a BST to implement a "
+                        "Bag Interface - a collection that is similar to a Set, "
+                        "except that allows for multiple copies of the same element. "
+                        "This specific implementation requires the use of lazy deletion.",
          "video": ""},
-        {"title": "Cypher encyrpter and decrypter",
+        {"title": "Cypher Encyrpter and Decrypter",
          "url": "https://github.com/flightlesskite/ProgAE2",
-         "description": "",
+         "description": "An assessed Java exercise from my Core Programming module "
+                        "which uses a keyword to process either a Mono or Vigenere "
+                        "cipher on a txt file to encrypt and decrypt its content.",
          "video": ""},
-        {"title": "Gym booking system with SQL database",
+        {"title": "Gym Booking System with SQL Database",
          "url": "https://github.com/flightlesskite/GymBookingJDBC",
-         "description": "",
+         "description": "An assessed Java exercise from my Database module "
+                        "which uses the JDBC API to connect to the University's"
+                        "PostgreSQL database for a Gym Booking system that allows "
+                        "users to be book a class or facility with double bookings "
+                        "accounted for.  In addition to this, queries of the current "
+                        "bookings can be returned and displayed on the GUI.",
          "video": ""}
     ]
 
     other_projects = [
-        {"title": "Teleoperation of Baxter robot using the HTC Vive",
-         "url": "https://youtu.be/3GzbZMFeiFI",
-         "description": "",
+        {"title": "Cyber Security Policy Report",
+         "url": "",
+         "description": "A report highlighting the risks of Cloud Computing "
+                        "in a professional setting and the Cyber Security Policy "
+                        "proposal used to address any threats that may be faced "
+                        "in adopting such a system.",
          "video":""},
-        {"title": "FishyDishy Web Application",
-         "url": "https://youtu.be/UeZ-_Mk48a8",
-         "description": "",
-         "video":""}
+        {"title": "Interface Experiment Car Infotainment System",
+         "url": "",
+         "description": "A report evaluating user tests comparing the traditional "
+                        "touch controls in car infotainment system to a possible "
+                        "interface controlled using voice control.  A paper prototype "
+                        "was initially conceived to design the two systems to compare "
+                        "the two setups.  The user evaluations utilised powerpoint to "
+                        "simulate interactions with the two different versions of "
+                        "the infotainment system.",
+         "video":"https://youtu.be/-a3Lq6GeauU"},
+        {"title": "Masters Software Development Dissertation",
+         "url": "",
+         "description": "Masters Disseration discussing the Research on teleoperation systems"
+                "using VR interfaces - the challenges faced in implementing such "
+                "a system on a single Linux Computer.",
+         "video": ""},
+        {"title": "UG Marketing Dissertation",
+         "url": "",
+         "description": "Marketing dissertation discussing the diffusion and"
+                "subsequent commercialisation of new, innovative technolgies "
+                "and how to achieve market acceptance.",
+         "video": ""},
     ]
 
     cats = {"Python Projects": {"pages": python_projects,
