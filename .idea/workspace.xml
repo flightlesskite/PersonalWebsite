@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b083a9a-4d2b-49a9-a59c-1ebebdf467a7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/calvin/contact.html" afterPath="$PROJECT_DIR$/templates/calvin/contact.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/stylesheet.css" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/calvin_webpage/settings.py" afterPath="$PROJECT_DIR$/calvin_webpage/settings.py" />
+      <change beforePath="$PROJECT_DIR$/static/images/baxter.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/images/gf2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/images/hp.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/mystyle.css" afterPath="$PROJECT_DIR$/static/mystyle.css" />
+      <change beforePath="$PROJECT_DIR$/templates/calvin/about.html" afterPath="$PROJECT_DIR$/templates/calvin/about.html" />
+      <change beforePath="$PROJECT_DIR$/templates/calvin/base.html" afterPath="$PROJECT_DIR$/templates/calvin/base.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,11 +31,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="myjs.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/myjs.js">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/calvin/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="1028">
+              <caret line="142" column="29" lean-forward="true" selection-start-line="142" selection-start-column="29" selection-end-line="142" selection-end-column="29" />
+              <folding>
+                <element signature="e#5672#5679#1#HTML" expanded="true" />
+                <element signature="e#5864#5882#0#HTML" expanded="true" />
+                <element signature="e#6041#6059#0#HTML" expanded="true" />
+                <element signature="e#6218#6236#0#HTML" expanded="true" />
+                <element signature="e#6395#6413#0#HTML" expanded="true" />
+                <element signature="e#6566#6584#0#HTML" expanded="true" />
+                <element signature="e#6742#6760#0#HTML" expanded="true" />
+                <element signature="e#6912#6930#0#HTML" expanded="true" />
+                <element signature="e#7083#7101#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stylesheet.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/stylesheet.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="186" column="4" lean-forward="false" selection-start-line="186" selection-start-column="4" selection-end-line="186" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mystyle.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/mystyle.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="118">
+              <caret line="207" column="1" lean-forward="true" selection-start-line="207" selection-start-column="1" selection-end-line="207" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/calvin/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="54" lean-forward="false" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -61,6 +109,7 @@
       <find>link</find>
       <find>quick</find>
       <find>number</find>
+      <find>crop</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,18 +141,19 @@
         <option value="$PROJECT_DIR$/templates/calvin/projects.html" />
         <option value="$PROJECT_DIR$/calvin/models.py" />
         <option value="$PROJECT_DIR$/populate_calvin.py" />
-        <option value="$PROJECT_DIR$/static/stylesheet.css" />
         <option value="$PROJECT_DIR$/static/calvinstyle.css" />
         <option value="$PROJECT_DIR$/templates/calvin/index.html" />
         <option value="$PROJECT_DIR$/templates/calvin/category.html" />
         <option value="$PROJECT_DIR$/templates/calvin/cv.html" />
         <option value="$PROJECT_DIR$/static/myjs.js" />
-        <option value="$PROJECT_DIR$/templates/calvin/about.html" />
         <option value="$PROJECT_DIR$/static/mystylesheet.css" />
         <option value="$PROJECT_DIR$/static/mystyle.html" />
-        <option value="$PROJECT_DIR$/templates/calvin/base.html" />
-        <option value="$PROJECT_DIR$/static/mystyle.css" />
         <option value="$PROJECT_DIR$/templates/calvin/contact.html" />
+        <option value="$PROJECT_DIR$/static/images/personalstyle.css" />
+        <option value="$PROJECT_DIR$/static/mystyle.css" />
+        <option value="$PROJECT_DIR$/templates/calvin/base.html" />
+        <option value="$PROJECT_DIR$/static/stylesheet.css" />
+        <option value="$PROJECT_DIR$/templates/calvin/about.html" />
       </list>
     </option>
   </component>
@@ -114,8 +164,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="187" />
-    <option name="y" value="169" />
+    <option name="x" value="324" />
+    <option name="y" value="95" />
     <option name="width" value="847" />
     <option name="height" value="579" />
   </component>
@@ -156,6 +206,12 @@
             <path>
               <item name="calvin_webpage" type="b2602c69:ProjectViewProjectNode" />
               <item name="calvin_webpage" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="calvin_webpage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="calvin_webpage" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -183,6 +239,7 @@
       <recent name="$PROJECT_DIR$/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/static/images" />
       <recent name="$PROJECT_DIR$/templates/calvin" />
     </key>
@@ -353,7 +410,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="187" y="169" width="847" height="579" extended-state="0" />
+    <frame x="324" y="95" width="847" height="579" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -413,16 +470,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/calvin/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="41" column="39" lean-forward="false" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#24#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/calvin/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -661,14 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/stylesheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/calvin/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="59">
@@ -729,24 +768,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/calvin/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2332">
-          <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
-          <folding>
-            <element signature="e#5725#5732#1#HTML" expanded="true" />
-            <element signature="e#5917#5935#0#HTML" expanded="true" />
-            <element signature="e#6094#6112#0#HTML" expanded="true" />
-            <element signature="e#6271#6289#0#HTML" expanded="true" />
-            <element signature="e#6448#6466#0#HTML" expanded="true" />
-            <element signature="e#6619#6637#0#HTML" expanded="true" />
-            <element signature="e#6786#6804#0#HTML" expanded="true" />
-            <element signature="e#6956#6974#0#HTML" expanded="true" />
-            <element signature="e#7127#7145#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/mystyle.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -763,34 +784,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/mystyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="325" column="16" lean-forward="false" selection-start-line="325" selection-start-column="16" selection-end-line="325" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/calvin/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/calvin/projects.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/calvin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="24" column="88" lean-forward="false" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="88" />
           <folding />
         </state>
       </provider>
@@ -803,11 +800,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/personalstyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="280" column="0" lean-forward="true" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/myjs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
+        <state relative-caret-position="339">
           <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/mystyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="207" column="1" lean-forward="true" selection-start-line="207" selection-start-column="1" selection-end-line="207" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/calvin/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="54" lean-forward="false" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/calvin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="24" column="88" lean-forward="false" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/stylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="186" column="4" lean-forward="false" selection-start-line="186" selection-start-column="4" selection-end-line="186" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/calvin/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1028">
+          <caret line="142" column="29" lean-forward="true" selection-start-line="142" selection-start-column="29" selection-end-line="142" selection-end-column="29" />
+          <folding>
+            <element signature="e#5672#5679#1#HTML" expanded="true" />
+            <element signature="e#5864#5882#0#HTML" expanded="true" />
+            <element signature="e#6041#6059#0#HTML" expanded="true" />
+            <element signature="e#6218#6236#0#HTML" expanded="true" />
+            <element signature="e#6395#6413#0#HTML" expanded="true" />
+            <element signature="e#6566#6584#0#HTML" expanded="true" />
+            <element signature="e#6742#6760#0#HTML" expanded="true" />
+            <element signature="e#6912#6930#0#HTML" expanded="true" />
+            <element signature="e#7083#7101#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
