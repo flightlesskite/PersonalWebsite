@@ -26,12 +26,16 @@
                         {% if page.video %}
                             <a class="link" href="{{ page.video }}">YouTube video</a>
                         {% endif %}
+                        {% if page.file %}
+                            <a class="link" href="{{ page.file }}">PDF Report</a>
+                        {% endif %}
                     <br />
                     </p>
 
                     <p>
                     {{ page.description }}
                     </p>
+
                     <hr>
 
                 {% endfor %}

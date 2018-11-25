@@ -27,6 +27,7 @@ class Page(models.Model):
     technologies = models.CharField(max_length=500)
     url = models.URLField(null=True, blank=True)
     video = models.URLField(null=True, blank=True)
+    file = models.URLField(null=True, blank=True)
 
     def __str__(self):
         return self.title

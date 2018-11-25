@@ -27,7 +27,8 @@ def populate():
                         "through using Unity (C#) to render video streaming on "
                         "the individual eyes of the user.",
 
-         "video": "https://youtu.be/3GzbZMFeiFI"},
+         "video": "https://youtu.be/3GzbZMFeiFI",
+         "file": ""},
         {"title": "FishyDishy Web Application",
          "url": "https://github.com/flightlesskite/fishy_dishy_project",
          "description": "A Group Project utilizing the Python and the Django framework to build "
@@ -39,7 +40,8 @@ def populate():
                         "connecting with database through Python Models, "
                         "creating Python Views to serve data rendered by templates "
                         "and testing the several functions of the web application.",
-         "video": "https://youtu.be/UeZ-_Mk48a8" },
+         "video": "https://youtu.be/UeZ-_Mk48a8",
+         "file":""},
     ]
 
     java_projects = [
@@ -52,7 +54,8 @@ def populate():
                         "online version (using Javascript, CSS and HTML) and"
                         "implementing the RESTAPI methods used to "
                         "connect front-end with back-end.",
-         "video": ""},
+         "video": "",
+         "file": ""},
         {"title": "Car Intersection Simulator using Threads",
          "url": "https://github.com/flightlesskite/APAE",
          "description": "An assessed Java exercise from my Advanced Programming "
@@ -60,7 +63,8 @@ def populate():
                         "intersection simulation.  The cars cannot occupy the same "
                         "space at any given moment and can move in a straight line - "
                         "either left to right or up and down (& vice versa).",
-         "video": ""},
+         "video": "",
+         "file": ""},
         {"title": "Bag Data Structure Implementation",
          "url": "https://github.com/flightlesskite/ADS",
          "description": "An assessed Java exercise from my Algorithms and Data "
@@ -68,13 +72,15 @@ def populate():
                         "Bag Interface - a collection that is similar to a Set, "
                         "except that allows for multiple copies of the same element. "
                         "This specific implementation requires the use of lazy deletion.",
-         "video": ""},
+         "video": "",
+         "file": ""},
         {"title": "Cypher Encyrpter and Decrypter",
          "url": "https://github.com/flightlesskite/ProgAE2",
          "description": "An assessed Java exercise from my Core Programming module "
                         "which uses a keyword to process either a Mono or Vigenere "
                         "cipher on a txt file to encrypt and decrypt its content.",
-         "video": ""},
+         "video": "",
+         "file": ""},
         {"title": "Gym Booking System with SQL Database",
          "url": "https://github.com/flightlesskite/GymBookingJDBC",
          "description": "An assessed Java exercise from my Database module "
@@ -83,7 +89,8 @@ def populate():
                         "users to be book a class or facility with double bookings "
                         "accounted for.  In addition to this, queries of the current "
                         "bookings can be returned and displayed on the GUI.",
-         "video": ""}
+         "video": "",
+         "file": ""}
     ]
 
     other_projects = [
@@ -93,7 +100,8 @@ def populate():
                         "in a professional setting and the Cyber Security Policy "
                         "proposal used to address any threats that may be faced "
                         "in adopting such a system.",
-         "video":""},
+         "video": "",
+         "file": "https://www.scribd.com/document/393880770/ECS-Report?secret_password=8Z8ahyPDd6jqtXP05bFT"},
         {"title": "Interface Experiment Car Infotainment System",
          "url": "",
          "description": "A report evaluating user tests comparing the traditional "
@@ -103,19 +111,23 @@ def populate():
                         "the two setups.  The user evaluations utilised powerpoint to "
                         "simulate interactions with the two different versions of "
                         "the infotainment system.",
-         "video":"https://youtu.be/-a3Lq6GeauU"},
+         "video":"https://youtu.be/-a3Lq6GeauU",
+         "file":"https://www.scribd.com/document/393880820/HCI-Report?secret_password=BXODP83Cvb2AFHFIs4tz"},
         {"title": "Masters Software Development Dissertation",
          "url": "",
-         "description": "Masters Disseration discussing the Research on teleoperation systems"
-                "using VR interfaces - the challenges faced in implementing such "
-                "a system on a single Linux Computer.",
-         "video": ""},
+         "description": "Masters Disseration researching VR interfacing for teleoperation systems "
+                "- the challenges faced in implementing such a system using the HTC Vive and "
+                        "Baxter robot on a single Linux Computer.",
+         "video": "",
+         "file": "https://www.scribd.com/document/393881104/Software-Development-MSC?secret_password=2XoSiZk49xEslEzTprue"},
         {"title": "UG Marketing Dissertation",
          "url": "",
          "description": "Marketing dissertation discussing the diffusion and"
-                "subsequent commercialisation of new, innovative technolgies "
-                "and how to achieve market acceptance.",
-         "video": ""},
+                "subsequent commercialisation of new, innovative technologies "
+                "and how to achieve market acceptance:  Case study of the Nintendo "
+                        "Switch console.",
+         "video": "",
+         "file": "https://www.scribd.com/document/393881351/Marketing-BA?secret_password=Zt0OAy2CCRcEJw4IuOlY"},
     ]
 
     cats = {"Python Projects": {"pages": python_projects,
@@ -132,18 +144,20 @@ def populate():
     for cat, cat_data in cats.items():
         c = add_cat(cat, cat_data["image"])
         for p in cat_data["pages"]:
-            add_page(c, p["title"], p["url"], p["description"], p["video"])
+            add_page(c, p["title"], p["url"], p["description"], p["video"],
+                     p["file"])
 
     #Print out the categories we have added.
     for c in Category.objects.all():
         for p in Page.objects.filter(category=c):
             print("- {0} - {1}".format(str(c), str(p)))
 
-def add_page(cat, title, url, description, video):
+def add_page(cat, title, url, description, video, file):
     p = Page.objects.get_or_create(category=cat, title=title)[0]
     p.url=url
     p.description=description
     p.video=video
+    p.file=file
     p.save()
     return p
 

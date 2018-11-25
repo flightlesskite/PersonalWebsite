@@ -2,6 +2,7 @@
 {% load staticfiles %}
 
 {% block title_block %}
+
     Home
 {% endblock %}
 
@@ -13,17 +14,19 @@
         <h5>Graduate Software Developer</h5>
         <p>
             Hello! Welcome to my personal website. I recently just graduated
-            from my MSc Software Development course.  <a href="{% url 'cv' %}">Here</a>, you will
-            find some information regarding my past work experience and education.  A lot of my code,
-            including this website is found on my <a href="https://github.com/flightlesskite/">GitHub</a>.
+            from my MSc Software Development course so I am currently looking to
+            start my career in programming.  When I am not in front of a computer,
+            I like to learn songs & go for runs! A lot of my code, including this
+            website, is found on my <a href="https://github.com/flightlesskite/">GitHub</a>.
 
         </p>
-    <ul class="quicklink">
-        <li><a href="/calvin/category/python-projects"><i class="fab fa-python"></i></a></li>
-        <li><a href="/calvin/category/java-projects"><i class="fab fa-java"></i></a> </li>
-        <li><a href="/calvin/category/other-projects"><i class="fas fa-pencil-alt"></i></a></li>
 
-    </ul>
+        <ul>
+            <li><a href="/calvin/category/python-projects"><i class="fab fa-python"></i></a></li>
+            <li><a href="/calvin/category/java-projects"><i class="fab fa-java"></i></a> </li>
+            <li><a href="/calvin/category/other-projects"><i class="fas fa-pencil-alt"></i></a></li>
+        </ul>
+
     </div>
 
 {% endblock %}
